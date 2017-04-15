@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns:color="http://www.w3.org/1999/xhtml">
+<head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<script>
+    $(document).ready(function() {
+        $("#spring ").click(function () {
+            $("#panel").slideToggle(1000);
+
+
+        });
+    });
+    $(document).ready(function() {
+        $("#other").click(function () {
+            $("#panel2").slideToggle(3000);
+        });
+    });
+    $(document).ready(function() {
+        $("#cs").click(function () {
+            $("#panel3").slideToggle(2000);
+        });
+    });
+
+        $(document).ready(function() {
+
+            $("#useful").click(function () {
+                $("#panel4").slideToggle(2000);
+            });
+        });
+
+    $(document).ready(function() {
+
+        $("#books").click(function () {
+            $("nav").animate({width:'toggle'},500
+            );
+        });
+    });
+
+    $(document).ready(function() {
+
+        $("#401").click(function () {
+            $("#info").hide();
+            $("s401").show()
+
+        });
+
+    });
+
+    $(document).ready(function() {
+
+        $("#home").click(function () {
+
+            $("#info").show()
+        });
+
+    });
+
+
+
+
+
+
+
+</script>
+<style>
+    header
+    {
+        width:100%;
+        height: 180%;
+        background-color: black;
+
+    }
+    #gomez
+    {
+        color: white;
+        size: 100px;
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    nav
+    {
+        width: 15%;
+        height: 2000px;
+        background-color: brown;
+        float: left;
+        display: none;
+        position: absolute;
+
+    }
+   button
+    {
+        padding: 10px;
+       margin: auto;
+       width:80%;
+
+
+
+    }
+    
+    section
+    {
+
+        width: auto;
+        margin-left: 17%;
+
+        height: 1000px;
+
+    }
+    div.sneha
+    {
+
+        height:auto;
+        border-bottom: solid;
+        text-align: center;
+        size: 10px;
+        padding: 5px;
+
+
+    }
+    .sneha:hover
+    {
+        background-color: black;
+        color: white;
+    }
+    #panel,#panel2,#panel3,#panel4
+    {
+     height:auto;
+        width:100%;
+     display: none;
+        background-color: cornsilk;
+    }
+
+    button:hover
+    {
+        background-color:cornflowerblue;
+        color:black;
+    }
+    i{
+        color: white;
+        float: left;
+
+        font-size: 50px;
+
+    }
+
+    i:hover
+    {
+        background-color:coral;
+        cursor: hand;
+
+    }
+    #home
+    {
+        float: right;
+        color:white;
+        margin:20px 30px 0 0px;
+
+    }
+    #books
+    {
+        margin:20px 0 0 30px;
+
+    }
+
+
+
+
+
+
+</style>
+
+<body>
+<header>
+    <i class="material-icons" id="books">books</i>
+    <i class="material-icons" id="home">home</i>
+
+    <h1 id="gomez">Dr Ernesto Gomez PhD</h1>
+
+
+
+</header>
+
+
+
+
+<nav>
+    <button id="spring">Spring 2016</button>
+
+    <div id="panel">
+        <div class="sneha" id="401">CSE 401</div>
+        <div class="sneha">CSE 624</div>
+
+
+
+
+    </div>
+<br>
+    <br>
+
+    <button id="other">Other Courses</button>
+    <div id="panel2">
+
+        <div class="sneha" >CSE 129</div>
+        <div class="sneha">CSE 201 Computer Science I</div>
+            <div class="sneha">CSE 202 Computer Science II</div>
+                <div class="sneha">CSE 320 Computer Languages</div>
+                    <div class="sneha">CSE 330 Data Structures</div>
+                        <div class="sneha"> CSE 401 Computer Architecture</div>
+                            <div class="sneha"> CSE 488 Ethics</div>
+                                <div class="sneha"> CSE 489 Senior Seminar</div>
+                                    <div class="sneha">CSE 500 (was 600) Automata</div>
+                                        <div class="sneha">CSE 600/501 (was 546/646 Theory of Computation</div>
+                                            <div class="sneha">CSE 599 Foundations of Software Systems</div>
+                                                <div class="sneha">CSE 601 Advanced Theory of Computation and Complexity</div>
+                                                    <div class="sneha">CSE 510/610 Advanced Computer Architecture</div>
+                                                        <div class="sneha">CSE 624 Distributed Computing</div>
+                                                            <div class="sneha">CSE 630 Algorithms</div>
+                                                                <div class="sneha">CSE 570/670 Compilers</div>
+                                                                    <div class="sneha">CSE 671 Advanced Compilers</div>
+
+
+
+    </div>
+    <br>
+    <br>
+
+    <button id="cs" >Computer Science resources</button>
+    <div id="panel3">
+        <div class="sneha">Designing and Building Parallel Programs , Ian Foster (online book)</div>
+
+            <div class="sneha">Parallel computing timeline (from Gregory V. Wilson, University of Toronto): Text</div>
+                <div class="sneha">Cornell Theory Center</div>
+                    <div class="sneha">MPI documentation and downloads</div>
+                        <div class="sneha">CRPC - Rice University</div>
+                            <div class="sneha">Analysis of Algorithms</div>
+                                <div class="sneha">MPI 1.1 standard (pdf)</div>
+                                    <div class="sneha">MPI 2.0 standard (pdf)</div>
+                                        </div>
+    <br>
+    <br>
+
+
+    <button id="res">Research on going updates</button>
+    <br>
+    <br>
+
+    <button id="con">Conway's Game of Life</button>
+    <br>
+    <br>
+
+    <button id="cell">Some other cellular automata</button>
+    <br>
+    <br>
+
+    <button id="useful">Useful reference links:</button>
+
+    <div id="panel4">
+        <div class="sneha">The New Zealand Digital Library</div>
+            <div class="sneha"> Computer science technical reports</div>
+
+</div>
+
+
+
+
+
+</nav>
+
+
+<section>
+<div id="info">
+  <p>Professor - Computer Science<br>
+
+    <p>Office: JB 337<br>
+    <p>office hours: TBA<br>
+    <p>Phone: (909) 537-5429<br>
+    <p>Email: ernesto@csusb.edu<br>
+
+</div>
+    <div id="s401">
+
+
+        <p id="h401">cse 401 : Computer Architecture : spring 2016</p>
+
+</div>
+</section>
+
+
+
+</body>
+</head>
+</html>
+
